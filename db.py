@@ -9,7 +9,7 @@ conf = Config_Loader()
 log = logger.get_log('db')
 
 #db connection
-connection = MongoClient(conf.mongo_url)
+connection = MongoClient(conf.mongo_host)
 #Table list
 db_users = connection.rdrlotto.users
 db_draw = connection.rdrlotto.draw

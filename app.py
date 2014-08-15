@@ -1,5 +1,9 @@
-import ui
-from main_view import Main_Controller
+import traceback
+try:
+    from Lotto.views.main_view import view
+except Exception, ex:
+    print traceback.format_exc()
 
-view = ui.load_view('main_view')
+
+view.load()
 
